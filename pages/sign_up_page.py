@@ -8,11 +8,10 @@ class Sign_up_page(Base_page):
     SIGN_UP_BTN = (By.ID,'sign-up-link')
     PERSONAL_BTN = (By.CSS_SELECTOR, "input[value='personal']")
     CONTINUE_BTN = (By.XPATH, "//span[contains(text(),'CONTINUE')]")
+    FIRST_NAME = (By.XPATH, "//input[@type='text']")
+    FIRST_NAME_CONTINUE_BTN = (By.XPATH, '//button[@data-test-id="first-name-continue-btn"]')
     LAST_NAME_CONTINUE_BTN = (By.CSS_SELECTOR,".jss49 > span:nth-child(1)")
     LAST_NAME = (By.CSS_SELECTOR,"input[placeholder='Type your answer here...']")
-    FIRST_NAME_CONTINUE_BTN = (By.XPATH,'//button[@data-test-id="first-name-continue-btn"]')
-    FIRST_NAME = (By.XPATH,'//*[@id="root"]/div/div[4]/div[2]/div/div[2]/div/div/input')
-
 
 
     def navigate_sign_up_page(self):
